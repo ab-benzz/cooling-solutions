@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="services.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #fff;
+      padding: 32px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="product-grid">
+    <!-- Col 1: tall -->
+    <a class="card bg-peach tall card-industrial">
+      <div>
+        <p class="card-title">Industrial Fan</p>
+        <p class="card-desc">High performance for tough environment</p>
+      </div>
+      <img src="images/industrial-fan.png" alt="" class="card-img">
+    </a>
+    <!-- Col 2 -->
+    <a href="#" class="card bg-pink card-smart">
+      <div>
+        <p class="card-title">Smart Aircon</p>
+        <p class="card-desc">Smart comfort at your hand</p>
+      </div>
+      <img src="images/smart-aircon.png" alt="" class="card-img">
+    </a>
+    <a href="#" class="card bg-pink card-window">
+      <div>
+        <p class="card-title">Window Type</p>
+        <p class="card-desc">Reliable cooling for any window</p>
+      </div>
+      <img src="images/window-type.png" alt="" class="card-img">
+    </a>
+    <!-- Col 3 -->
+    <a href="#" class="card bg-beige card-purifier">
+      <div>
+        <p class="card-title">Air Purifier &amp;
+          Humidifier</p>
+        <p class="card-desc">Cleaner air,
+          healthier living</p>
+      </div>
+      <img src="images/air-purifier-humidifier.png" alt="" class="card-img">
+    </a>
+    <a href="#" class="card bg-beige card-portable">
+      <div>
+        <p class="card-title">Portable Aircon</p>
+        <p class="card-desc">Flexible cooling wherever you need it</p>
+      </div>
+      <img src="images/portable-aircon.png" alt="" class="card-img">
+    </a>
+    <!-- Col 4: tall -->
+    <a href="#" class="card bg-green tall card-floor">
+      <div>
+        <p class="card-title">Floor Standing</p>
+        <p class="card-desc">Powerful cooling for large spaces</p>
+      </div>
+      <img src="images/floor-standing.png" alt="" class="card-img">
+    </a>
+    <!-- Col 5 -->
+    <a href="#" class="card bg-orange card-inverter">
+      <div>
+        <p class="card-title">Inverter Aircon</p>
+        <p class="card-desc">Energy efficient cooling,
+          always</p>
+      </div>
+      <img src="images/inverter-aircon.png" alt="" class="card-img">
+    </a>
+
+    <a href="#" class="card bg-orange card-split">
+      <div>
+        <p class="card-title">Split Type</p>
+        <p class="card-desc">Smart comfort at your command</p>
+      </div>
+      <img src="images/split-type.png" alt="" class="card-img">
+    </a>
+  </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="services-banner">
+    <span>AIR QUALITY SOLUTION</span>
+  </div>
+
+  <div class="services-banner">
+    <span>AIRCON SOLUTION</span>
+  </div>
+
+  <div class="services-banner">
+    <span>COMMERCIAL & INDUSTRIAL COOLING</span>
+  </div>
+
+  <div class="services-banner">
+    <span>SERVICES OFFERED</span>
+
+    <style>
+      .services-banner {
+        max-width: 1300px;
+        width: 100%;
+        margin: 16px auto;
+        padding: clamp(6px, 1.5vw, 10px) 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 999px;
+
+        /* Soft beige gradient similar to the image */
+        background: linear-gradient(90deg,
+            #D7B38F 0%,
+            #E7CAAC 20%,
+            #ecd7c1 50%,
+            #E7CAAC 80%,
+            #D7B38F 100%);
+      }
+
+      .services-banner span {
+        font-size: clamp(24px, 1.5vw, 32px);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        /* Subtle embossed/shadow effect */
+        text-shadow:
+          0 1px 0 rgba(255, 255, 255, 0.45),
+          0 3px 4px rgba(0, 0, 0, 0.18);
+      }
+    </style>
+  </div>
+
+
+  <section class="banner-grid">
+    <!-- Banner 1 -->
+    <div class="banner banner-1">
+      <div class="banner-content">
+        <p class="banner-title">Aircon Cleaning<br>&amp; Maintenance</p>
+        <p class="banner-sub">Made easy by <span>smile serve</span></p>
+        <a href="#" class="banner-btn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="banner banner-2">
+      <div class="banner-content">
+        <p class="banner-title">Aircon Buyer's<br>Guide</p>
+        <p class="banner-sub">Helping you decide</p>
+        <a href="#" class="banner-btn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Banner 3 -->
+    <div class="banner banner-3">
+      <div class="banner-content">
+        <p class="banner-title">Aircon<br>Installation</p>
+        <p class="banner-sub">Made easy by <span>smile serve</span></p>
+        <a href="#" class="banner-btn">Learn more</a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+</body>
+
+</html>

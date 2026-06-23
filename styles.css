@@ -1,0 +1,152 @@
+/* ── GRID ── */
+.product-grid {
+  display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 8px 15px;
+}
+
+/* ── CARD ── */
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 8px;
+  min-height: 190px;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.04),
+    0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--PrimaryTextColor-PrimaryGray100, #383d45);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.card-desc {
+  font-size: 11px;
+  color: var(--PrimaryTextColor-PrimaryGray100, #383d45);
+  line-height: 1.4;
+}
+
+.card-emoji {
+  font-size: 52px;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 8px;
+  line-height: 1;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  max-height: 80px;
+  max-width: 150px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.card.tall .card-emoji {
+  font-size: 70px;
+}
+
+/* ── COLORS ── */
+.bg-peach {
+  background: #fde9d1;
+}
+.bg-pink {
+  background: #ffeae4;
+}
+
+.bg-beige {
+  background: #f7f2e8;
+}
+
+.bg-green {
+  background: #f9ffda;
+}
+.bg-orange {
+  background: #fde3cf;
+}
+
+@media (width > 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── DESKTOP ── */
+@media (width > 1024px) {
+  .product-grid {
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  .card {
+    min-height: unset;
+  }
+
+  .card.tall .card-img {
+    max-height: 280px;
+    max-width: 180px;
+  }
+
+  .card.tall .card-emoji {
+    font-size: 90px;
+  }
+
+  /* Col 1: tall */
+  .card-industrial {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  /* Col 2 */
+  .card-smart {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card-window {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* Col 3 */
+  .card-purifier {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .card-portable {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  /* Col 4: tall */
+  .card-floor {
+    grid-column: 4;
+    grid-row: 1 / 3;
+  }
+
+  /* Col 5 */
+  .card-inverter {
+    grid-column: 5;
+    grid-row: 1;
+  }
+  .card-split {
+    grid-column: 5;
+    grid-row: 2;
+  }
+}
