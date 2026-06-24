@@ -58,8 +58,12 @@
   object-fit: contain;
 }
 
-.card.tall .card-emoji {
-  font-size: 70px;
+.card.tall:has(.floor-standing) {
+  flex-direction: row;
+}
+
+.card.tall .floor-standing {
+  max-height: 150px;
 }
 
 /* ── COLORS ── */
@@ -105,8 +109,8 @@
     max-width: 180px;
   }
 
-  .card.tall .card-emoji {
-    font-size: 90px;
+  .card.tall.card.tall:has(.floor-standing) {
+    flex-direction: column;
   }
 
   /* Col 1: tall */
