@@ -17,6 +17,7 @@
   align-items: flex-end;
   padding: 24px;
   background-size: cover !important;
+  background-position: right;
 }
 
 /* Colored backgrounds */
@@ -107,7 +108,7 @@
 }
 
 /* ── MOBILE ── */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .banner-grid {
     grid-template-columns: 1fr;
   }
